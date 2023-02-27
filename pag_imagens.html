@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Imagens</title>
+    <style>
+        /* Versão para dispositivos móveis */
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --azulroxeado: #2611e4;
+            --azulclaro: #acb5eb;
+            --roxo: #970ce7;
+            --azulescuro: #110957;
+            --amarelo: #e4d60f;
+
+            --preto: #000000;
+            --branco: #ffffff;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            background-image: linear-gradient(to top, var(--roxo), var(--azulescuro));
+        }
+
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div {
+            background-color: var(--azulclaro);
+            width: 350px;
+            height: 220px;
+            margin-bottom: 50px;
+        }
+
+        div > img {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <img src="imagens/water1-1000.jpg" alt="foto agua" width="300px">
+        </div>
+        <p><a href="pag_principal.html" rel="prev"><img src="imagens/arrow_circle_left.png" alt="back"></a></p>
+    </main>
+</body>
+</html>
